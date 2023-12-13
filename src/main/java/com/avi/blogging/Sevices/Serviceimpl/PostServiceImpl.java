@@ -45,7 +45,7 @@ public class PostServiceImpl implements PostService {
         Post createdPost=postRepository.save(post);
         //userRepository.save(post.getUser());
        // categoryRepository.save(post.getCategory());
-        System.out.println(createdPost.getUser().getUserId()+"  "+createdPost.getCategory().getCategoryId());
+       // System.out.println(createdPost.getUser().getUserId()+"  "+createdPost.getCategory().getCategoryId());
         return this.modelMapper.map(createdPost,PostDto.class);
     }
 
